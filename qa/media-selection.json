@@ -1,0 +1,115 @@
+{
+  "stills": [
+    {
+      "asset": "basket-finish-1013.webp",
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261013/DJI_20261013213043_0053_D.MP4",
+      "second": 7.98,
+      "width": 1800,
+      "height": 1013,
+      "crop": null
+    },
+    {
+      "asset": "basket-net-1013.webp",
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261013/DJI_20261013213043_0053_D.MP4",
+      "second": 8.55,
+      "width": 1800,
+      "height": 1013,
+      "crop": null
+    },
+    {
+      "asset": "basket-smile-1013.webp",
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261013/DJI_20261013214654_0054_D.MP4",
+      "second": 73.8,
+      "width": 1348,
+      "height": 1800,
+      "crop": [
+        2350,
+        130,
+        3840,
+        2120
+      ]
+    },
+    {
+      "asset": "basket-pass-1013.webp",
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261013/DJI_20261013200206_0048_D.MP4",
+      "second": 8.0,
+      "width": 1800,
+      "height": 1013,
+      "crop": null
+    },
+    {
+      "asset": "basket-jump-1005.webp",
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261005/写真/IMG_0671.png",
+      "second": null,
+      "width": 1012,
+      "height": 1800,
+      "crop": null
+    },
+    {
+      "asset": "basket-dribble-1005.webp",
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261005/写真/IMG_0668.png",
+      "second": null,
+      "width": 1012,
+      "height": 1800,
+      "crop": null
+    },
+    {
+      "asset": "basket-break-1009.webp",
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261009/朝の部/写真/IMG_0745.png",
+      "second": null,
+      "width": 1012,
+      "height": 1800,
+      "crop": null
+    },
+    {
+      "asset": "basket-teamplay-1013.webp",
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261013/DJI_20261013194806_0046_D.MP4",
+      "second": 26.0,
+      "width": 1800,
+      "height": 1013,
+      "crop": null
+    },
+    {
+      "asset": "basket-defence-1005.webp",
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261005/写真/IMG_0677.png",
+      "second": null,
+      "width": 1012,
+      "height": 1800,
+      "crop": null
+    },
+    {
+      "asset": "hero-v2-poster.webp",
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261013/DJI_20261013213043_0053_D.MP4",
+      "second": 7.95,
+      "width": 1600,
+      "height": 900,
+      "crop": null
+    }
+  ],
+  "hero_segments": [
+    {
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261013/DJI_20261013213043_0053_D.MP4",
+      "start": 6.65,
+      "end": 9.8,
+      "reason": "白シャツの選手のレイアップ。8.55秒でボールがネットを通過するフレームを確認。"
+    },
+    {
+      "source": "/Users/seishiro.t/p.b.q/映像素材/20261013/DJI_20261013214654_0054_D.MP4",
+      "start": 71.8,
+      "end": 73.8,
+      "reason": "プレー中の笑顔。同じシュートへの反応としては扱わない独立した場面。"
+    }
+  ],
+  "conversation": {
+    "source": "/Users/seishiro.t/p.b.q/バスケ/IMG_2765.MOV",
+    "time": 1.4,
+    "crop": [
+      583,
+      1305,
+      1598,
+      2457
+    ],
+    "output": "basket-conversation.webp",
+    "note": "体育館で3人が会話する実写。表情・人物は加工しない。"
+  }
+}

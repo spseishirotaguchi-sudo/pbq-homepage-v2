@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pbq-fukuoka-20261022.s-taguchi323.chatgpt.site/sitemap.xml
