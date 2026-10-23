@@ -2,7 +2,7 @@
 
 - HP：https://pbq-fukuoka-20261022.s-taguchi323.chatgpt.site/
 - GitHub：https://github.com/spseishirotaguchi-sudo/pbq-homepage-v2
-- 保存元の版：9a6902fdb5101e7d4cd861cade3a294fa7d76087
+- 保存元の版：b954596c3006e2524d83306835fa6049c10534a5
 
 GitHubには認証情報を除いた最新版のソースを保存しています。GitHub Pagesは有効にしていません。Instagramの自動同期にサーバー機能が必要なため、HPの公開先は上記URLです。
 

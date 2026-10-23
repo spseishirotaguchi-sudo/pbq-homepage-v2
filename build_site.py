@@ -130,11 +130,11 @@ orbits = '<div class="value-visual"><div class="orbit-set"><svg class="orbit-lin
 value_articles=''.join(f'''<article class="value-article" id="value-{i+1}" data-value="{i}"><p class="value-index">{v[0]} {v[1]}</p><h3>{v[3]}</h3>{image(v[4],v[1]+'の活動風景',1200,675)}<p>{v[5]}</p>{button(v[7],v[6])}</article>''' for i,v in enumerate(values))
 value_html='<section class="values-section wrap" id="values">'+section_title('P.B.Q COMMUNITY','p.b.qで過ごす、3つの時間。')+'<div class="values-layout">'+orbits+'<div class="value-articles">'+value_articles+'</div></div></section>'
 stories='<section class="stories-section wrap" id="activities">'+section_title('OUR ACTIVITIES','平日の朝も、夜も。バスケの外でも。','バスケを中心に、日常のなかで集まる時間を。<br>開催日時と会場は、公式LINEでご案内しています。')
-for num,tag,title,desc,img,href in [
-    ('01','MORNING BASKETBALL','平日の朝からバスケ','朝からバスケで身体を動かし、充実した一日のスタートを切りたい。','basket-dribble-1005.webp','activities.html#morning'),
-    ('02','NIGHT BASKETBALL','平日の夜にもバスケ','仕事終わりに、仕事以外で出会った仲間と身体を動かす。仕事疲れを運動疲れに変えて、家でぐっすり眠る。','basket-teamplay-1013.webp','activities.html#night'),
-    ('03','OFF THE GYM','p.b.qの仲間と、<br>距離をグッと縮める。','バスケ以外にも、親睦会やイベント企画を行っています。家と職場の往復から、抜け出そう。','photo-group.webp','activities.html#community')]:
-    stories+=f'<article class="story-card"><div class="story-copy"><p class="speech-tag">{tag}</p><div class="story-title"><span>{num}</span><h3>{title}</h3></div><p class="story-desc">{desc}</p><dl><div><dt>活動</dt><dd>{"バスケットボール" if num!="03" else "親睦会・交流イベント"}</dd></div><div><dt>ご案内</dt><dd>日時・場所・申込みは公式LINEへ</dd></div></dl><a class="text-link" href="{href}">詳しく見る {arrow()}</a></div>{image(img,title.replace("<br>",""),1200,900)}</article>'
+for num,tag,title,desc,img in [
+    ('01','MORNING BASKETBALL','平日の朝からバスケ','朝からバスケで身体を動かし、充実した一日のスタートを切りたい。','basket-dribble-1005.webp'),
+    ('02','NIGHT BASKETBALL','平日の夜にもバスケ','仕事終わりに、仕事以外で出会った仲間と身体を動かす。仕事疲れを運動疲れに変えて、家でぐっすり眠る。','basket-teamplay-1013.webp'),
+    ('03','OFF THE GYM','p.b.qの仲間と、<br>距離をグッと縮める。','バスケ以外にも、親睦会やイベント企画を行っています。家と職場の往復から、抜け出そう。','photo-group.webp')]:
+    stories+=f'<article class="story-card"><div class="story-copy"><p class="speech-tag">{tag}</p><div class="story-title"><span>{num}</span><h3>{title}</h3></div><p class="story-desc">{desc}</p><dl><div><dt>活動</dt><dd>{"バスケットボール" if num!="03" else "親睦会・交流イベント"}</dd></div><div><dt>ご案内</dt><dd>日時・場所・申込みは公式LINEへ</dd></div></dl></div>{image(img,title.replace("<br>",""),1200,900)}</article>'
 stories+='</section>'
 movie_html='<section class="movies-section wrap instagram-section" id="movies">'+section_title('P.B.Q CHANNEL','Instagramで見る、p.b.q。','いつもの練習も、バスケの外の時間も。<br>p.b.qのInstagram投稿をお届けします。')+'<div class="instagram-widget"><div class="instagram-profile"><a href="'+INSTAGRAM+'" class="instagram-profile-icon" aria-label="p.b.qのInstagram"><img src="assets/instagram-avatar.jpg" alt="" width="56" height="56" loading="lazy" decoding="async"></a><div><a href="'+INSTAGRAM+'"><strong>p.b.q_fukuoka</strong></a><p>福岡の20代社会人バスケコミュニティ / p.b.q</p></div></div><div class="instagram-feed" id="instagram-feed" aria-label="p.b.qのInstagram投稿" aria-busy="true"><div class="instagram-loading" role="status">Instagramの投稿を読み込んでいます。</div></div><div class="instagram-feed-footer"><p id="instagram-feed-status" class="feed-status" aria-live="polite"></p>'+button('Instagramをフォローする',INSTAGRAM)+'</div></div></section>'
 
