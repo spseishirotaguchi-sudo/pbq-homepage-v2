@@ -1,11 +1,3 @@
-# 公開HPと保存先
-
-- HP：https://pbq-fukuoka-20261022.s-taguchi323.chatgpt.site/
-- GitHub：https://github.com/spseishirotaguchi-sudo/pbq-homepage-v2
-- 保存元の版：b954596c3006e2524d83306835fa6049c10534a5
-
-GitHubには認証情報を除いた最新版のソースを保存しています。GitHub Pagesは有効にしていません。Instagramの自動同期にサーバー機能が必要なため、HPの公開先は上記URLです。
-
 # p.b.q 新ホームページ
 
 更新日：2026-10-23。既存LPとは別のホームページ。同じSitesプロジェクトを継続して更新。
@@ -45,7 +37,22 @@ VinextがホームページとAPIを提供。 .openai/hosting.json に同じSite
 
 ## 公開範囲
 
-HPはログイン不要で一般公開。Instagramの自動同期は、公開HPのサーバー側で実行する。管理者用の接続設定は、引き続き所有者だけが操作できる。
+既存の一般公開サイトを維持。公開URL・所有者・Instagram連携の権限は変更しない。
+
+## アクセス解析（2026-11-01）
+
+GA4「p.b.q｜HP・LP」、測定ID `G-R6ZDP89L27`。HPと既存LPで同じウェブストリームを使い、`content_group` を `hp` / `lp` に分ける。共通の `public/assets/analytics.js` をジェネレーターから全公開ページに読み込む。
+
+- `line_click`：参加案内のLINEリンク。問い合わせは別イベント `line_contact_click`。
+- `instagram_click`：Instagramへのリンク。
+- `content_progress`：実際のスクロールで25/50/75/90%に到達したとき、各ページで各1回。
+- `faq_open`：FAQを開いたときの番号。
+- `button_position`：header / hero / menu / content / join / final / footer / mobile_fixed。
+- ページURLは公開パスと安全なUTM値だけを送信。ハッシュやその他のクエリは除外。広告パーソナライズ・Googleシグナルは無効。
+- 本番のHP・LP以外ではGoogleタグを読み込まない。LINEユーザーIDや会員データ、フォーム入力は解析対象にしない。
+- プライバシーページの停止設定とGPCを尊重。停止時はタグの新規読み込みと独自イベント送信を行わない。
+
+検証：`node --test qa/analytics-check.cjs`。LINEクリックは友だち追加完了・参加申込完了を意味しない。
 
 認証手順の一次資料：https://developers.facebook.com/documentation/instagram-platform/instagram-api-with-instagram-login/business-login （2026-10-23にMeta公式画面で確認）。
 
